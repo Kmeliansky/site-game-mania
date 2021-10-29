@@ -1,7 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
  <html lang="pt-br">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/stile.css">
     <meta charset="UTF-8">
     <title>Game Mania</title>
@@ -12,93 +16,132 @@
         <meta name="theme-color" content="#0006c2"/>
         <link
             rel="shortcut icon"
-            href="https://i.pinimg.com/564x/0b/00/1c/0b001c5560d126e50f205c8c7eed7ed5.jpg"
-            type="image/x-icon">
+            href="https://i.pinimg.com/236x/18/fa/c3/18fac3d1b44c4b9166e82961f751401f.jpg"
+            type="image/x-icon"> 
 
 </head>
 
 <body>
     <header>
-        <div class="fundo"> <h1>GAME MANIA</h1>
+      <div class="fundo">
+          <h1>GameMania.Com</h1>
+          <img src="./imagem/imagem-9.png" alt="login" class="login"
+      </div>
+
+       </div>
+        <nav>
+            <ul class="menu">
+               <li><a href="computadores.html">Computadores</a>
+                    <ul>
+                        <li><a href="#">Gabinete</a></li>
+                        <li><a href="#">Processador</a></li>
+                        <li><a href="#">Monitor</a></li>
+                        <li><a href="#">Memoria SSD</a></li>
+                        <li><a href="#">Memória RAM</a></li>
+                        <li><a href="#">teclado</a></li>
+                        <li><a href="#">mouse</a></li>
+                        <li><a href="#">Placa de video</a></li>
+                        <li><a href="#">Jogos</a></li>
+                    </ul>
+                </li>
+                <li><a href="playstation.html">PlayStation</a>
+                    <ul>
+                        <li><a href="#">PlayStation 2</a></li>
+                        <li><a href="#">PlayStation 3</a></li>
+                        <li><a href="#">PlayStation 4</a></li>
+                        <li><a href="#">PlayStation 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="informatica.html">Informática</a>
+                    <ul>
+                        <li><a href="#">teclado</a></li>
+                        <li><a href="#">mouse</a></li>
+                        <li><a href="#">mouse pad</a></li>
+                        <li><a href="#">outros</a></li>
+                    </ul>
+                </li>    
+                <li><a href="acessorios.html">Acessórios</a>
+                    <ul>
+                        <li><a href="#">Fones de ouvido</a></li>
+                        <li><a href="#">Pelicula</a></li>
+                        <li><a href="#">Caixas de som</a></li>
+                    </ul>
+                <li><a href="notebook.html">Notebook</a>
+                    <ul>
+                        <li><a href="#">Samsumg</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Nvidia</a></li>
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">JBL</a></li>
+                    </ul>
+                <li><a href="monitores.html">Monitores</a>
+                    <ul>
+                        <li><a href="#">Monitor uled</a></li>
+                        <li><a href="#">Monitor 4k</a></li>
+                        <li><a href="#">Outros Monitores</a></li>
+                    </ul>
+                <li><a href="headset.html">Headset</a>
+                    <ul>
+                        <li><a href="#">headset coloridos</a></li>
+                        <li><a href="#">Headset sem fio</a></li>
+                        <li><a href="#">Headset via bluetooth</a></li>
+                    </ul>
+                <li><a href="som.html">Som</a>
+                    <ul>
+                        <li><a href="#">Caixa de som bluetooth</a></li>
+                        <li><a href="#">caixa de som sem fio</a></li>
+                        <li><a href="#">fones de ouvido</a></li>
+                    </ul>   
+                <li><a href="xbox.html">Xbox</a>
+                    <ul>
+                        <li><a href="#">xbox 360</a></li>
+                        <li><a href="#">xbox one</a></li>
+                        <li><a href="#">xbox serie x/s</a></li>
+                        <li><a href="#">Controle</a></li>
+                    </ul>   
+                <li><a href="nintendo.html">Nintendo</a>
+                    <ul>
+                        <li><a href="#">Controle</a></li>
+                        <li><a href="#">Jogos</a></li>
+                        <li><a href="#">Nintendo swchit</a></li>
+                    </ul>  
+               
+            </ul>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./imagem/imagem7.png" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imagem/imagem-4.jpg" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imagem/imagem-8.jpg" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+                 
+                 
         </div>
        
-        <nav class="menu">
-            <a class="LinkMenu" href="index.html">CONSOLE</a>
-            <a class="LinkMenu" href="interna01.html">COMPUTADOR</a>
-            <a class="LinkMenu" href="interna02.html">JOGOS</a>
-            <a class="LinkMenu" href="interna02.html">SMARTPHONE</a>
-            <a class="LinkMenu" href="interna02.html">NOTEBOOK</a>
-            <a class="LinkMenu" href="interna02.html">ACESSORIOS</a>
-            <a class="LinkMenu" href="interna3.html">OUTROS</a>
-            <a class="LinkMenu" href="interna4.html">CONTATO</a>
-            <a class="LinkMenu" href="interna6.html">SOBRE NÓS</a>
-            <a class="LinkMenu" href="interna.html">LOCALIZAÇÃO</a>
-        </nav>
-        <div class="galeria d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col 12">
-                        <section class="texto-galeria">
-                            <h2>DESTAQUES DA SEMANA</h2>
-                            <p>Conheça os produtos que mais foram vendidos na loja e bem avaliados</p>
-                       </section>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-1">
-            <img src="https://i.pinimg.com/564x/76/f1/30/76f13020d6326fe4097caaeb4938bee1.jpg" class="img-fluid1" alt="img-galeria">
-        </div>
-        <div class="col-1">
-            <img src="https://i.pinimg.com/564x/87/d7/9f/87d79ff09aee1a54d79c8902e9e27a32.jpg" class="img-fluid1" alt="img-galeria">
-        </div>
-        <div class="col-1">
-            <img src="https://i.pinimg.com/564x/44/0b/6a/440b6a096d1a05c803ec9735d3cc62fb.jpg" class="img-fluid1" alt="img-galeria">
-        </div>
-        <div class="col-2">
-            <img src="https://st4.depositphotos.com/12549814/38255/i/1600/depositphotos_382557402-stock-photo-japan-june-11-2020-presentation.jpg" class="img-fluid2" alt="img-galeria">
-        </div>
-        <div class="col-2">
-            <img src="https://i.pinimg.com/564x/ed/8f/35/ed8f35009de7887c1c423a9291b1a29d.jpg" class="img-fluid2" alt="img-galeria">
-        </div>
-        <div class="col-2">
-            <img src="https://i.pinimg.com/564x/23/96/3e/23963eeb2f6fdce526559cb34b8d710e.jpg" class="img-fluid2" alt="img-galeria">
-        </div>
-        <section class="texto-galeria">
-            <h2>NOVOS PRODUTOS</h2>
-            <p>Fique por dentro dos produtos que acabaram de chegar a loja</p>
-        </section>
-        <div class="col-3">
-           <img src="https://i.pinimg.com/564x/77/56/b0/7756b01bfe7c8df9c5ebb6cea328f83a.jpg" class="img-fluid3" alt="img-galeria">
-        </div>   
-        <div class="col-3">
-            <img src="https://i.pinimg.com/564x/47/c5/4b/47c54b44815c10b8ed6da25c195cec26.jpg" class="img-fluid3" alt="img-galeria">
-        </div>
-        <div class="col-3">
-            <img src="https://i.pinimg.com/564x/52/02/bb/5202bb45cbd3076b5c20937604269c9d.jpg" class="img-fluid3" alt="img-galeria">
-        </div>
-        <div class="col-4">
-            <img src="https://i.pinimg.com/564x/64/7e/ea/647eea216e5b88ced45a11b74c8fc202.jpg" class="img-fluid4" alt="img-galeria">
-        </div>
-        <div class="col-4">
-            <img src="https://i.pinimg.com/564x/5a/7d/c7/5a7dc709b45d5c5b4b26999bc5a785e6.jpg" class="img-fluid4" alt="img-galeria">
-        </div>
-        <div class="col-4">
-            <img src="https://i.pinimg.com/564x/ff/52/b7/ff52b76eb7e5306d5f9b71a723f4c45c.jpg" class="img-fluid4" alt="img-galeria">
-        </div>    
-        <section class="texto-galeria">
-            <h2>PROMOÇÕES</h2>
-            <p>descubra os produtos que estão com promoções imperdiveis em nossa loja</p>
-        </section>
-        <div class="col-5">
-            <img src="https://i.pinimg.com/564x/25/66/27/2566274214992f22199b282ea4ea84d7.jpg" class="img-fluid5" alt="img-galeria">
-        </div>
-        <div class="col-5">
-            <img src="https://i.pinimg.com/564x/06/74/73/0674730bac342605f4257ad8565cff12.jpg" class="img-fluid5" alt="img-galeria">
-        </div>
-        <div class="col-5">
-            <img src="https://i.pinimg.com/564x/69/8b/f0/698bf07ee570616ab6dd128986b13a88.jpg" class="img-fluid5" alt="img-galeria">
-        </div>               
+          <h2>Novidades já disponiveis!</h2>
+          
        
         </header>
             
@@ -111,7 +154,9 @@
                     <h4>SAC</h4>
                 </div>
         </footer>
-                
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
 </body>
 
 </html>
