@@ -1,176 +1,115 @@
-.fundo{
+body,ul {
+  margin: 0px;
+  padding: 0px;
+}
 
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Fugaz One", cursive;
+}
+
+a:hover {
+  background: rgba(245, 245, 245, 0.966);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #190be2;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
     width: 100%;
-    height: 50%;
-    left: 0;
-    top: 8%;
-    background-color: rgb(31, 0, 168)
+    top: 70px;
+    right: 0px;
+    background-image: linear-gradient(blue, black);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
-.menu .LinkMenu{
-text-decoration: none;
-margin: 5px 25px 4px;
-text-transform: uppercase;
-color: rgb(7, 34, 155);
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
-justify-content: center;
-}
-h5{
-font-family: 'Source Sans Pro', sans-serif;
-color: rgb(255, 255, 255);
-font-family: Arial, Helvetica, sans-serif;
-margin-left: 7%;
-margin-top: 1%;}
-p{
-    margin: 510px 480px 0px;
-}
-h2,h3{
-font-weight: bold;
-margin-left: 30%;
-margin-top: 3%;
-font-family: Arial, Helvetica, sans-serif;
-justify-content:center;
-    color: black;
-}
-h1 {
-    font-family:"Fugaz One", cursive;
-    margin-left: 35%;
-    margin-top: 0px;
-    color: rgb(255, 255, 255);
-  }   
-.footer {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(40, 55, 189);
-}
-
-.banner-home{
-    margin: 50px 480px 0px;
-    width: 100px;
-    height: 100px;
-}
-.menu{
-    background-color: rgb(163, 223, 231);
-margin-top: 1;
-list-style:none;
-border:1px solid #ffffff;
-float: left;
-margin-left: 12%;
-}
-.menu li{
-    position:relative;
-    float:right;
-    border-right:1px solid #ffffff;
+h2{
     justify-content: center;
+    top: 50%;
 }
-.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
-
-.menu li a:hover{
-background:#333;
-color:rgb(0, 238, 255);
--moz-box-shadow:0 3px 10px 0 #CCC;
--webkit-box-shadow:0 3px 10px 0 #ccc;
-text-shadow:0px 0px 5px #fff;
+#carouselExampleSlidesOnly{
+    margin-top: 3%;
 }
-.menu li  ul{
-    position:absolute;
-    top:25px;
-    left:5;
-    background-color:rgb(8, 180, 223);
-    display:none;
-}
-.menu li:hover ul, .menu li.over ul{display:block;}
-
-.menu li ul li{
-    border:1px solid #00aeff;
-    display:block;
-    width:150px;
-}
-body{
-margin: 0;
-padding: 0;
-height: 100vh;
-width: 100vw;
-}
-.carousel-slide{
-width: 50%;
-height: 30%;
-justify-content: center;
-
-}
-#carouselExampleIndicators{
-margin-top: 5%;    
-width: 80%;
-height: 20%;
-justify-content: center;
-margin-left: 9%;
-}
-.img{
-width: 50%;
-height: 10%;
-}
-.login{
-width: 2%;
-height: 2%;
-margin-top: -7%;
-margin-left: 4%;
-}
-
-.lista{
-background-color: rgb(255, 255, 255);    
-list-style: none;
-display: flex;
-justify-content: space-around;
-padding: 15%;
-margin-top: -5%;
-margin-left: -5%;
-
-
-}
-.card{
-width: 10%;
-height: 5%;
-
-}
-.linha1{
-    border-radius: 1px;
-    border-style: solid; 
-    justify-content: center;
-    margin-top: -12%;
-    color: black;
-    border-color: rgb(230, 229, 229);
-    background-color: rgb(235, 235, 235);
-    
-    
-    
-    
-}
-
-
-.logo{
-width: 2%;
-height: 2%;
-margin-top: -5%;
-margin-left: 4%;
-
-}
-
-
-.h6{
-    color: black;
-}
-.saiba{
-    margin-left: 42%;
-    margin-top: -5%;
-    grid: auto columns 5px; ;
-}
-.estrela{
-    width: 2%;
-    height: 2%;
-    margin-top: -5%;
-    margin-left: 4%;
-
-}
-.preço{
-    margin-left: 75%;
+.space{
+    margin-top: 3rem;
 }
